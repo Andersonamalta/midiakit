@@ -1,0 +1,115 @@
+.alcance {
+    max-width: 1200px;
+    padding: 40px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
+}
+
+.alcance .subtitulo {
+    color: #ededed;
+}
+
+.alcance-texto {
+    font-size: 1.5rem;
+    line-height: 1.33;
+    max-width: 40ch;
+    margin-bottom: 60px;
+    color: #4a4a4a;
+    font-family: "Fira Sans", sans-serif;
+}
+
+.alcance-texto strong {
+    color: #0e0e0e;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 20px;
+    padding: 20px;
+    background-color: #fafafa;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.info::before {
+    content: "";
+    display: block;
+    width: 4px;
+    height: 20px;
+    background: linear-gradient(180deg, #7287f9 0%, #3751d9 100%);
+    position: absolute;
+    top: 20px;
+    left: -4px;
+}
+
+.info-ano {
+    position: absolute;
+    top: 17px;
+    left: -35px;
+    color: #4a4a4a;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 0.875rem;
+    text-align: right;
+    width: 80px;
+}
+
+.info-titulo {
+    font-size: 1.125rem;
+    line-height: 1.1;
+    font-weight: bold;
+    font-family: "Anek Malayalam", sans-serif;
+    color: #000000;
+}
+
+.info-texto {
+    font-size: 0.875rem;
+    line-height: 1.4;
+    color: #4a4a4a;
+    font-family: "Fira Sans", sans-serif;
+}
+
+.info-habilidades {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-content: start;
+}
+
+.info-habilidades li {
+    font-size: 1.3rem;
+    line-height: 1.4;
+    border-radius: 5px;
+    background-color: #d6dcff;
+    padding: 10px 20px;
+    font-family: "Fira Sans", sans-serif;
+}
+
+@media (max-width: 800px) {
+    .alcance {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .alcance .subtitulo {
+        color: #0e0e0e;
+    }
+
+    .alcance-texto {
+        font-size: 1.25rem;
+    }
+
+    .info {
+        grid-template-columns: 1fr;
+    }
+
+    .info-ano {
+        position: initial;
+        order: 1;
+        text-align: left;
+        width: initial;
+    }
+}

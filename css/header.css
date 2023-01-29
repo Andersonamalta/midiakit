@@ -1,0 +1,55 @@
+@import "./global.css";
+
+.header {
+    display: flex;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-menu {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.header-menu a {
+    color: #0e0e0e;
+    font-family: Fira sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.3rem;
+    padding: 10px 20px;
+    display: block;
+    background-color: #fafafa;
+    border-radius: 5px;
+    border: 2px solid #ffffff;
+}
+
+.header-menu a:hover {
+    background-color: #ededed;
+    border: 2px solid #455ddb;
+}
+
+@media (max-width: 1050px) {
+    .header {
+        justify-items: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .header-menu {
+        justify-content: center;
+    }
+
+    .header-menu a {
+        font-size: 1rem;
+    }
+}
